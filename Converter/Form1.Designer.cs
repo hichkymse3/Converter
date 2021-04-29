@@ -194,7 +194,7 @@ namespace Converter
             // 
             this.HowP.Controls.Add(this.button3);
             this.HowP.Controls.Add(this.pictureBox3);
-            this.HowP.Location = new System.Drawing.Point(816, 122);
+            this.HowP.Location = new System.Drawing.Point(2, 12);
             this.HowP.Name = "HowP";
             this.HowP.Size = new System.Drawing.Size(894, 564);
             this.HowP.TabIndex = 7;
@@ -215,7 +215,7 @@ namespace Converter
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 20);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(894, 544);
             this.pictureBox3.TabIndex = 0;
@@ -226,9 +226,9 @@ namespace Converter
             this.oran.AutoSize = true;
             this.oran.Location = new System.Drawing.Point(227, 507);
             this.oran.Name = "oran";
-            this.oran.Size = new System.Drawing.Size(162, 25);
+            this.oran.Size = new System.Drawing.Size(16, 25);
             this.oran.TabIndex = 8;
-            this.oran.Text = "Jpeg%:  0  Tiff%:  0";
+            this.oran.Text = ".";
             // 
             // Form1
             // 

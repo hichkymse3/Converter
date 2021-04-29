@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Converter
@@ -30,24 +31,45 @@ namespace Converter
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int x1, x2;
+            /*int x1, x2;
+            var s1 = 0;
+            var s2 = 0;
 
             DataTable ds = new DataTable();
-            string yol = "Data source=Data.db";
+            string yol = "Data Source=Data.db;Version=3;";
             SQLiteConnection baglanti = new SQLiteConnection(yol);
             baglanti.Open();
 
             string al = "select * from Sayac";
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(al,baglanti);
             adapter.Fill(ds);
-            var s1 = (int)ds.Rows[0][0];
-            var s2 = (int)ds.Rows[0][1];
+
+            SQLiteCommand komut;
+
+            if (ds.Rows.Count > 0)
+            {
+                s1 = (int)ds.Rows[0][0];
+                s2 = (int)ds.Rows[0][1];
+            }
+            else
+            {
+                string yap = "update Sayac set Jpeg='" + s1 + "',Tiff='" + s2 + "';";
+                komut = new SQLiteCommand(yap, baglanti);
+                komut.ExecuteNonQuery();
+            }
+            
             baglanti.Close();
 
-            x1 = (s1 * 100) / ((s1 + s2) * 100 / (s1 + s2));
-            x2 = (s2 * 100) / ((s1 + s2) * 100 / (s1 + s2));
+            if (s1 + s2 == 0)
+            {
+                x1 = 0; x2 = 0;
+            }
+            else
+            {
+                x1 = (s1 * 100) / ((s1 + s2) * 100 / (s1 + s2)); x2 = (s2 * 100) / ((s1 + s2) * 100 / (s1 + s2));
+            }
 
-            oran.Text = "Jpeg%: " + x1 + " Tiff%: " + x2;
+            oran.Text = "Jpeg%: " + x1 + " Tiff%: " + x2;*/
         }
         
         private void choose_Click(object sender, EventArgs e)
