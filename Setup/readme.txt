@@ -1,0 +1,1 @@
+You can install the program by running the setup exe.
