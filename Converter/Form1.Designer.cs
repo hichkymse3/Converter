@@ -194,7 +194,7 @@ namespace Converter
             // 
             this.HowP.Controls.Add(this.button3);
             this.HowP.Controls.Add(this.pictureBox3);
-            this.HowP.Location = new System.Drawing.Point(2, 12);
+            this.HowP.Location = new System.Drawing.Point(12, 12);
             this.HowP.Name = "HowP";
             this.HowP.Size = new System.Drawing.Size(894, 564);
             this.HowP.TabIndex = 7;

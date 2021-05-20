@@ -68,27 +68,6 @@ namespace Converter
             {
                 x.Save(dialog.FileName,ImageFormat.Jpeg);
             }
-
-            /*var sayac = 0;
-
-            DataTable ds = new DataTable();
-            string yol = "Data Source=Data.db;Version=3;";
-            SQLiteConnection baglanti = new SQLiteConnection(yol);
-            baglanti.Open();
-
-            string al = "select Jpeg from Sayac";
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(al,baglanti);
-            adapter.Fill(ds);
-            if (ds.Rows.Count > 0)sayac = (int)ds.Rows[0][0];
-            else sayac = 1;
-            ds.Rows[0][0] = sayac;
-
-            string ver = "update Sayac set Jpeg=@Jpeg";
-            SQLiteCommand komut = new SQLiteCommand(ver,baglanti);
-            komut.Parameters.Add(ds);
-            komut.ExecuteNonQuery();
-            baglanti.Close();*/
-            
         }
 
         public static void SaveImageT(Image x)
@@ -99,26 +78,6 @@ namespace Converter
             {
                 x.Save(dialog.FileName, ImageFormat.Tiff);
             }
-
-            /*var sayac = 0;
-
-            DataTable ds = new DataTable();
-            string yol = "Data Source=Data.db;Version=3;";
-            SQLiteConnection baglanti = new SQLiteConnection(yol);
-            baglanti.Open();
-
-            string al = "select Tiff from Sayac";
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(al,baglanti);
-            adapter.Fill(ds);
-            if (ds.Rows.Count > 0) sayac = (int)ds.Rows[0][0];
-            else sayac = 1;
-            ds.Rows[0][0] = sayac;
-
-            string ver = "update Sayac set Tiff=@Tiff";
-            SQLiteCommand komut = new SQLiteCommand(ver, baglanti);
-            komut.Parameters.Add(ds);
-            komut.ExecuteNonQuery();
-            baglanti.Close();*/
         }
     }
 }
