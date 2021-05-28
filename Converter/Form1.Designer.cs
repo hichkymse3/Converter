@@ -46,6 +46,9 @@ namespace Converter
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.oran = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Jpeg = new System.Windows.Forms.Label();
+            this.Tiff = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.JpegP.SuspendLayout();
@@ -194,7 +197,7 @@ namespace Converter
             // 
             this.HowP.Controls.Add(this.button3);
             this.HowP.Controls.Add(this.pictureBox3);
-            this.HowP.Location = new System.Drawing.Point(12, 12);
+            this.HowP.Location = new System.Drawing.Point(12, -2);
             this.HowP.Name = "HowP";
             this.HowP.Size = new System.Drawing.Size(894, 564);
             this.HowP.TabIndex = 7;
@@ -226,15 +229,45 @@ namespace Converter
             this.oran.AutoSize = true;
             this.oran.Location = new System.Drawing.Point(227, 507);
             this.oran.Name = "oran";
-            this.oran.Size = new System.Drawing.Size(16, 25);
+            this.oran.Size = new System.Drawing.Size(53, 25);
             this.oran.TabIndex = 8;
-            this.oran.Text = ".";
+            this.oran.Text = "Jpeg:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(317, 507);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Tiff:";
+            // 
+            // Jpeg
+            // 
+            this.Jpeg.AutoSize = true;
+            this.Jpeg.Location = new System.Drawing.Point(273, 507);
+            this.Jpeg.Name = "Jpeg";
+            this.Jpeg.Size = new System.Drawing.Size(16, 25);
+            this.Jpeg.TabIndex = 10;
+            this.Jpeg.Text = ".";
+            // 
+            // Tiff
+            // 
+            this.Tiff.AutoSize = true;
+            this.Tiff.Location = new System.Drawing.Point(352, 507);
+            this.Tiff.Name = "Tiff";
+            this.Tiff.Size = new System.Drawing.Size(16, 25);
+            this.Tiff.TabIndex = 11;
+            this.Tiff.Text = ".";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 574);
+            this.Controls.Add(this.Tiff);
+            this.Controls.Add(this.Jpeg);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.oran);
             this.Controls.Add(this.HowP);
             this.Controls.Add(this.button2);
@@ -282,6 +315,9 @@ namespace Converter
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label oran;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Jpeg;
+        private System.Windows.Forms.Label Tiff;
     }
 }
 
